@@ -3,6 +3,7 @@ const searchBtn = document.querySelector("#searchImg");
 const image = document.querySelector("#result");
 
 randomBtn.addEventListener("click", () => {
+  console.log("oli");
   fetch("https://api.thecatapi.com/v1/images/search")
     .then((response) => response.json())
     .then((data) => {
